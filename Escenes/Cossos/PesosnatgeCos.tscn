@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Imatges/VerddCamina1.png" type="Texture" id=1]
+[ext_resource path="res://Escenes/Cossos/PesosnatgeCos.gd" type="Script" id=2]
+[ext_resource path="res://Imatges/VerddQuiet.png" type="Texture" id=3]
+[ext_resource path="res://Imatges/VerddSalta.png" type="Texture" id=4]
+[ext_resource path="res://Imatges/VerddCamina2.png" type="Texture" id=5]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 15.0
+height = 4.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Quiet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Camina",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Salta",
+"speed": 5.0
+} ]
+
+[node name="AlieenPerso" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 147, 136 )
+shape = SubResource( 1 )
+
+[node name="Alieen" type="AnimatedSprite" parent="."]
+position = Vector2( 146, 132.032 )
+scale = Vector2( 0.693877, 0.687468 )
+frames = SubResource( 2 )
+animation = "Quiet"
