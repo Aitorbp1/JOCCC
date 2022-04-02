@@ -99,7 +99,7 @@ texture = ExtResource( 1 )
 offset = Vector2( 313.343, 144.157 )
 
 [node name="KinematicBody2D" parent="." index="1"]
-position = Vector2( -129, 156 )
+position = Vector2( -126, 151 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." index="2"]
 
