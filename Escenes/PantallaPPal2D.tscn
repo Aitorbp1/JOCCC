@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://Imatges/LLetres GOD.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/Personatge/Personatge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Imatges/negre.jpg" type="Texture" id=3]
-[ext_resource path="res://Imatges/LLetres.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,9 +15,9 @@ scale = Vector2( 1.38995, 0.611111 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 508, 254 )
-scale = Vector2( 1.82323, 3.63333 )
-texture = ExtResource( 4 )
+position = Vector2( 517, 304 )
+scale = Vector2( 1.10702, 1.76505 )
+texture = ExtResource( 1 )
 
 [connection signal="area_entered" from="Personatge" to="Personatge" method="_on_Personatge_area_entered"]
 [connection signal="area_exited" from="Personatge" to="Personatge" method="_on_Personatge_area_exited"]
