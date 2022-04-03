@@ -49,7 +49,7 @@ func _on_Respawn_body_entered(body):
 
 
 func _on_Area2D_body_entered(body):
-	get_tree().change_scene("res://Escenes/ESCENA2.tscn")
+	get_tree().change_scene("res://Escenes/Joc ordre/ESCENA2.tscn")
 
 
 func _on_Respawn_1_body_entered(body):
@@ -60,4 +60,4 @@ func _on_Respawn_1_body_entered(body):
 
 
 func _on_Area2D4_body_entered(body):
-	get_tree().change_scene("res://Escenes/ESCENA3.tscn")
+	get_tree().change_scene("res://Escenes/Joc ordre/ESCENA3.tscn")
